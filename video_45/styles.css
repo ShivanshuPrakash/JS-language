@@ -1,0 +1,18 @@
+.red{
+    color : white;
+    background-color :red
+}
+
+.yellow{
+    background-color: yellow;
+    color: brown;
+}
+
+.text-dark{
+    color: black;
+}
+
+.newlook{
+    color: blueviolet;
+    background-color: aquamarine;
+}

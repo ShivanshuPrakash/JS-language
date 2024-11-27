@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function </title>
+</head>
+<body>
+    <div class="sync"><pre><h1>Synchronous Function</h1>
+        A synchronous function executes sequentially, meaning one task is completed before the next one starts. 
+        The program waits for the current task to finish before moving on. This is straightforward
+        but can block the execution of other tasks, especially if the current task takes time
+        (e.g., reading a large file).</pre>
+    </div>
+    <div class="async"><pre><h1>Asynchronous Function</h1>
+        An asynchronous function allows the program to initiate a task and move on to the next one without waiting 
+        for the previous one to complete. The result of the asynchronous task is handled later, usually via
+        callbacks, promises, or async/await.
+    </pre></div>
+</div>
+<div class="call"><pre><h1>Callback Function</h1>
+    A callback function is a function that is passed as an argument to another function and is executed later,
+    typically after the completion of a specific task or event. It is a key concept in asynchronous programming,
+    especially in JavaScript.</pre></div>
+</body>
+<script src="script.js"></script>
+</html>

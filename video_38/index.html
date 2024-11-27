@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooky Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pooky Navbar -->
+    <nav class="pooky-navbar">
+        <div class="pooky-logo">Pooky Paradise 🎠</div>
+        <ul class="pooky-links">
+            <li><a href="#home">Home 🌟</a></li>
+            <li><a href="#fun">Fun Zone 🎢</a></li>
+            <li><a href="#explore">Explore 🐉</a></li>
+            <li><a href="#party">Party 🎉</a></li>
+        </ul>
+        <div class="pooky-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Confetti Animation -->
+    <div class="confetti"></div>
+
+    <!-- Pooky Content Sections -->
+    <section id="home" class="section home">
+        <h1>Welcome to Pooky Paradise! 🎠</h1>
+        <p>Enter a world of fun, magic, and endless adventure. Every corner is filled with joy and surprises!</p>
+        <button class="pooky-btn">Let the Fun Begin 🎈</button>
+    </section>
+
+    <section id="fun" class="section fun">
+        <h2>Fun Zone 🎢</h2>
+        <p>Dare to enter the Fun Zone? We’ve got cotton candy slides, rainbow swings, and so much more!</p>
+        <div class="fun-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Magic Slide">
+                <h3>Magic Slide 🍭</h3>
+                <p>Slide through clouds of cotton candy, and grab some sweets on the way!</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Rainbow Swing">
+                <h3>Rainbow Swing 🌈</h3>
+                <p>Soar through the colors of the rainbow with our magical swing ride!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore" class="section explore">
+        <h2>Explore Mystical Lands 🐉</h2>
+        <p>Uncover hidden paths, meet mystical creatures, and step into lands of wonder!</p>
+        <button class="pooky-btn">Uncover Mysteries 🔮</button>
+    </section>
+
+    <section id="party" class="section party">
+        <h2>Party Zone 🎉</h2>
+        <p>Let’s dance, sing, and celebrate! Join the party and make magical memories!</p>
+        <button class="pooky-btn">Join the Dance Floor 💃</button>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pookyToggle = document.querySelector('.pooky-toggle');
+            const pookyLinks = document.querySelector('.pooky-links');
+            
+            pookyToggle.addEventListener('click', () => {
+                pookyLinks.classList.toggle('active');
+                pookyToggle.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

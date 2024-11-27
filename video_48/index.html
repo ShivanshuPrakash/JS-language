@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browsing Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .event-box {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Browse and Trigger Events</h1>
+
+    <div class="event-box" id="clickBox">
+        <h2>Click Event</h2>
+        <p>Click anywhere inside this box, and you'll see the event logged below:</p>
+        <p id="clickMessage"></p>
+    </div>
+
+    <div class="event-box" id="scrollBox">
+        <h2>Scroll Event</h2>
+        <p>Scroll inside this box, and you'll see the event logged below:</p>
+        <p id="scrollMessage"></p>
+    </div>
+
+    <div class="event-box" id="keyBox">
+        <h2>Keyboard Event</h2>
+        <p>Type anything on your keyboard, and you'll see the event logged below:</p>
+        <p id="keyMessage"></p>
+    </div>
+
+    <script>
+        // Handle click event
+        const clickBox = document.getElementById('clickBox');
+        const clickMessage = document.getElementById('clickMessage');
+        clickBox.addEventListener('click', function() {
+            clickMessage.textContent = 'Click event triggered!';
+            console.log('Click event triggered!');
+        });
+
+        // Handle scroll event
+        const scrollBox = document.getElementById('scrollBox');
+        const scrollMessage = document.getElementById('scrollMessage');
+        scrollBox.addEventListener('scroll', function() {
+            scrollMessage.textContent = 'Scroll event triggered!';
+            console.log('Scroll event triggered!');
+        });
+
+        // Handle keydown event
+        const keyBox = document.getElementById('keyBox');
+        const keyMessage = document.getElementById('keyMessage');
+        document.addEventListener('keydown', function(event) {
+            keyMessage.textContent = `Key pressed: ${event.key}`;
+            console.log(`Key pressed: ${event.key}`);
+        });
+    </script>
+
+</body>
+</html>

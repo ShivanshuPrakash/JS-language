@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promisies</title>
+</head>
+<body>
+   
+    <h1> What is a Promise?</h1>
+    <pre>
+       
+A Promise in JavaScript is an object that represents the eventual completion
+or failure of an asynchronous operation. It has three possible states:
+
+Pending: The promise is still in progress.
+Fulfilled: The promise has been successfully completed (via resolve).
+Rejected: The promise has failed (via reject).
+
+    </pre>
+    <h3>" new Promise " --- >  Key-word</h3>
+    <pre>
+This creates a new Promise object.
+The constructor takes a function (called the executor) as an argument. This function receives two parameters:
+resolve: A function to call if the promise is fulfilled successfully.
+reject: A function to call if the promise encounters an error or fails.
+    </pre>
+    <pre>
+       <h3> What is resolve?</h3>
+    </pre>
+    <pre>
+resolve is a function provided by JavaScript when you create a new Promise.
+Calling resolve(value):
+Transitions the promise from the pending state to the fulfilled state.
+Passes the value (in this case, 56) to any .then() callbacks attached to the promise
+    </pre>
+    <h4>
+        <pre>
+Summary
+
+The resolve function is the mechanism to indicate the successful completion of a promise and pass
+the result to the next step in your asynchronous workflow. In your case, resolve(56) fulfilled
+the promise and stored 56 as its resolved value, even though it was not used further in the code.
+        </pre>
+    </h4>
+<h1>
+    Applications of Promises in JavaScript
+</h1>
+<pre>
+Fetching Data from APIs
+Used with fetch or libraries like axios to make HTTP requests and handle server responses asynchronously.
+
+File Handling in Node.js
+Read, write, or manipulate files asynchronously to avoid blocking the event loop.
+
+Chaining Asynchronous Operations
+Used to run multiple asynchronous tasks in sequence, such as processing data after fetching it.
+
+Error Handling
+Promises allow structured error handling using .catch(), simplifying debugging in asynchronous workflows.
+
+Timers and Delays
+Manage timeouts or intervals asynchronously using setTimeout wrapped in promises.
+
+Database Operations
+Interact with databases (e.g., MongoDB, MySQL) for queries, ensuring non-blocking interactions.
+
+Web Scraping
+Used in scraping tools to handle asynchronous requests and responses from websites.
+
+Event Handling
+Manage complex event-driven logic, such as waiting for multiple events to resolve (using Promise.all).
+
+Background Processing
+Used in background tasks like uploading files, sending emails, or long-running computations.
+
+Building Web Applications
+Ensure smooth user experiences by handling asynchronous UI updates or animations.
+
+
+Promises simplify managing asynchronous tasks and make the code more readable and maintainable.
+</pre>
+    <h2>Open console for more....</h2>
+</body>
+
+<script src="script.js"></script>
+</html>
